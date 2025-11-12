@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DERYA - Döşemealtı Eğitimde Robotik ve Yapay Zekâ Akademisi</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Inter fontunu tüm sayfaya uygula */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Kahraman bölümü için özel bir yükseklik */
+        .hero-section {
+            min-height: 75vh;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-3xl font-extrabold text-blue-700">DERYA</span>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="#hakkinda" class="text-gray-600 hover:text-blue-700 font-medium">Proje Hakkında</a>
+                    <a href="#amaclar" class="text-gray-600 hover:text-blue-700 font-medium">Amaç ve Hedefler</a>
+                    <a href="#paydaslar" class="text-gray-600 hover:text-blue-700 font-medium">Paydaşlar</a>
+                    <a href="#yaklasim" class="text-gray-600 hover:text-blue-700 font-medium">Yaklaşım</a>
+                    <a href="#ciktilar" class="text-gray-600 hover:text-blue-700 font-medium">Proje Çıktıları</a>
+                    <a href="#iletisim" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700">
+                        İletişim
+                    </a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                        <span class="sr-only">Menüyü aç</span>
+                        <!-- Hamburger Icon -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu (Gizli) -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#hakkinda" class="text-gray-600 hover:bg-gray-100 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium">Proje Hakkında</a>
+                <a href="#amaclar" class="text-gray-600 hover:bg-gray-100 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium">Amaç ve Hedefler</a>
+                <a href="#paydaslar" class="text-gray-600 hover:bg-gray-100 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium">Paydaşlar</a>
+                <a href="#yaklasim" class="text-gray-600 hover:bg-gray-100 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium">Yaklaşım</a>
+                <a href="#ciktilar" class="text-gray-600 hover:bg-gray-100 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium">Proje Çıktıları</a>
+                <a href="#iletisim" class="bg-blue-600 text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium">İletişim</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Kahraman (Hero) Bölümü -->
+        <section id="home" class="hero-section bg-gradient-to-r from-blue-700 to-indigo-800 text-white flex items-center">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+                    DERYA Projesi
+                </h1>
+                <h2 class="text-2xl md:text-4xl font-light mb-6">
+                    Döşemealtı Eğitimde Robotik ve Yapay Zekâ Akademisi
+                </h2>
+                <p class="max-w-3xl mx-auto text-lg md:text-xl text-blue-100 mb-8">
+                    Geleceğin teknolojisini Döşemealtı'nda tasarlıyoruz. Öğrencilerimizin yapay zekâ okuryazarlığını artırıyor, onları teknolojinin tüketicisi değil, üreticisi olmaya hazırlıyoruz.
+                </p>
+                <a href="#hakkinda" class="px-8 py-3 bg-white text-blue-700 font-semibold rounded-lg shadow-md hover:bg-gray-100 transition duration-300 text-lg">
+                    Projeyi Keşfet
+                </a>
+            </div>
+        </section>
+
+        <!-- Proje Hakkında (Özet ve Gerekçe) -->
+        <section id="hakkinda" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span class="text-blue-600 font-semibold uppercase">Proje Gerekçesi</span>
+                        <h3 class="text-3xl font-bold mt-2 mb-4">Neden DERYA?</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            Yapay zekâ (YZ) teknolojileri, üretimden turizme kadar tüm sektörleri hızla dönüştürmektedir. Bu doğrultuda, öğrencilerin erken yaşta YZ okuryazarlığı kazanarak teknolojinin tüketicisi olmaktan çıkıp üreticisi konumuna geçmelerini sağlamak hedeflenmektedir. Proje, ulusal teknoloji vizyonuyla uyumlu, yerel düzeyde uygulanabilir bir model oluşturma ihtiyacından doğmuştur.
+                        </p>
+                    </div>
+                    <div>
+                        <span class="text-blue-600 font-semibold uppercase">Proje Özeti</span>
+                        <h3 class="text-3xl font-bold mt-2 mb-4">Biz Kimiz?</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            DERYA, Döşemealtı Kaymakamlığı liderliğinde; Döşemealtı İlçe Milli Eğitim Müdürlüğü, yerel yönetimler, Antalya Bilim Üniversitesi, Organize Sanayi Bölgesi ve BTK Akademi işbirliğiyle hayata geçirilmiştir. Amacımız, "Altın Üçgen" (Akademi–Sanayi–Eğitim) olarak tanımlanan yerel ekosistemin gücünü kullanarak sürdürülebilir bir yapı kurmaktır.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Amaç ve Hedefler -->
+        <section id="amaclar" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <span class="text-blue-600 font-semibold uppercase">Vizyonumuz</span>
+                    <h2 class="text-4xl font-extrabold mt-2">Amaç ve Hedefler</h2>
+                    <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+                        Öğrencilerimizin yapay zekâ çağında ihtiyaç duyacakları yetkinlikleri kazandırmayı hedefliyoruz.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Hedef 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                        <div class="bg-blue-100 text-blue-700 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4">
+                            <!-- SVG İkon: Kitap (Okuryazarlık) -->
+                            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13.5M12 6.253V3.75a1.875 1.875 0 10-3.75 0V6.253M12 6.253H9.375A1.875 1.875 0 007.5 8.128V20.25M12 6.253h2.625A1.875 1.875 0 0116.5 8.128V20.25M16.5 20.25h-9" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">YZ Okuryazarlığı</h3>
+                        <p class="text-gray-600">
+                            İlçedeki ortaokul ve lise öğrencilerinin temel yapay zekâ okuryazarlığını artırmak ve kulüp çalışmalarıyla desteklemek.
+                        </p>
+                    </div>
+                    <!-- Hedef 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                        <div class="bg-blue-100 text-blue-700 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4">
+                            <!-- SVG İkon: Kalkan (Etik Kullanım) -->
+                            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.248-8.25-3.286zm0 1.332L12 2.25l-2.25 1.95h.001z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Bilinçli Kullanım</h3>
+                        <p class="text-gray-600">
+                            Öğrencilerin üretken yapay zekâ araçlarını bilinçli, etik ve verimli bir şekilde kullanmalarını sağlamak.
+                        </p>
+                    </div>
+                    <!-- Hedef 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                        <div class="bg-blue-100 text-blue-700 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4">
+                            <!-- SVG İkon: Lamba (Proje) -->
+                            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-1.125m-1.5 1.125a6.01 6.01 0 01-1.5-1.125m1.5 1.125v-2.25A2.25 2.25 0 0113.5 9.75V9h-3v.75a2.25 2.25 0 011.5 2.25v2.25m-6-11.25a.75.75 0 01.75-.75h1.5a.75.75 0 01.75.75v.006a.75.75 0 01-.75.75h-1.5a.75.75 0 01-.75-.75V3.376zm3 11.25a.75.75 0 01.75-.75h1.5a.75.75 0 01.75.75v.006a.75.75 0 01-.75.75h-1.5a.75.75 0 01-.75-.75V14.626zm3 0a.75.75 0 01.75-.75h1.5a.75.75 0 01.75.75v.006a.75.75 0 01-.75.75h-1.5a.75.75 0 01-.75-.75V14.626zm3 0a.75.75 0 01.75-.75h1.5a.75.75 0 01.75.75v.006a.75.75 0 01-.75.75h-1.5a.75.75 0 01-.75-.75V14.626z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Özgün Projeler</h3>
+                        <p class="text-gray-600">
+                            Öğretmen ve öğrencilerin yapay zekâ alanında ulusal teknoloji vizyonuna uygun özgün projeler geliştirmelerine öncülük etmek.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Paydaşlar Bölümü -->
+        <section id="paydaslar" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <span class="text-blue-600 font-semibold uppercase">Güç Birliği</span>
+                    <h2 class="text-4xl font-extrabold mt-2">Proje Paydaşları: "Altın Üçgen"</h2>
+                    <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+                        Akademi - Sanayi - Eğitim işbirliği ile DERYA projesini hayata geçiriyoruz.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-items-center opacity-75">
+                    <div class="text-center">
+                        <img src="https://placehold.co/150x100/e2e8f0/94a3b8?text=Kaymakamlık" alt="Döşemealtı Kaymakamlığı" class="h-20 mx-auto mb-2 grayscale">
+                        <span class="font-medium">Döşemealtı Kaymakamlığı</span>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://placehold.co/150x100/e2e8f0/94a3b8?text=Belediye" alt="Döşemealtı Belediyesi" class="h-20 mx-auto mb-2 grayscale">
+                        <span class="font-medium">Döşemealtı Belediyesi</span>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://placehold.co/150x100/e2e8f0/94a3b8?text=ABÜ" alt="Antalya Bilim Üniversitesi" class="h-20 mx-auto mb-2 grayscale">
+                        <span class="font-medium">Antalya Bilim Üniversitesi</span>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://placehold.co/150x100/e2e8f0/94a3b8?text=OSB" alt="Antalya Organize Sanayi Bölgesi" class="h-20 mx-auto mb-2 grayscale">
+                        <span class="font-medium">Antalya OSB</span>
+                    </div>
+                    <div class="text-center col-span-2 md:col-span-1">
+                        <img src="https://placehold.co/150x100/e2e8f0/94a3b8?text=BTK+Akademi" alt="BTK Akademi" class="h-20 mx-auto mb-2 grayscale">
+                        <span class="font-medium">BTK Akademi</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Yaklaşım (Kademeli Eğitim) -->
+        <section id="yaklasim" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <span class="text-blue-600 font-semibold uppercase">Yol Haritası</span>
+                    <h2 class="text-4xl font-extrabold mt-2">Kademeli Eğitim Mimarisi</h2>
+                    <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+                        Projemiz, üç temel aşamadan oluşan bir eğitim modeli üzerine kuruludur.
+                    </p>
+                </div>
+                <!-- Kademeler -->
+                <div class="relative">
+                    <!-- Bağlantı çizgisi -->
+                    <div class="hidden md:block absolute left-1/2 top-12 bottom-12 w-0.5 bg-blue-300" style="transform: translateX(-50%);"></div>
+
+                    <div class="grid md:grid-cols-3 gap-8 relative">
+                        <!-- Aşama 1 -->
+                        <div class="bg-white p-8 rounded-lg shadow-lg text-center md:text-left z-10">
+                            <div class="flex justify-center md:justify-start mb-4">
+                                <span class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-600 text-white font-bold text-xl">1</span>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3">Okuryazarlık</h3>
+                            <p class="text-gray-600">
+                                Tüm okullarımızda temel yapay zekâ okuryazarlığı programları ve öğrenci kulüpleri oluşturulması.
+                            </p>
+                        </div>
+                        <!-- Aşama 2 -->
+                        <div class="bg-white p-8 rounded-lg shadow-lg text-center z-10">
+                            <div class="flex justify-center mb-4">
+                                <span class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-600 text-white font-bold text-xl">2</span>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3">Uygulama</h3>
+                            <p class="text-gray-600">
+                                İlçe merkezinde ve Antalya Bilim Üniversitesi'nde hafta sonları uygulamalı yapay zekâ atölyeleri düzenlenmesi.
+                            </p>
+                        </div>
+                        <!-- Aşama 3 -->
+                        <div class="bg-white p-8 rounded-lg shadow-lg text-center md:text-right z-10">
+                            <div class="flex justify-center md:justify-end mb-4">
+                                <span class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-600 text-white font-bold text-xl">3</span>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3">Proje / Ustalık</h3>
+                            <p class="text-gray-600">
+                                Seçilmiş "DERYA Öncüleri" proje takımları için akademi ve sanayi odaklı mentorluk ve kamp programları.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proje Çıktıları -->
+        <section id="ciktilar" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <span class="text-blue-600 font-semibold uppercase">Sonuçlar</span>
+                    <h2 class="text-4xl font-extrabold mt-2">Proje Çıktıları</h2>
+                    <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+                        DERYA projesi ile somut ve sürdürülebilir değerler yaratıyoruz.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
+                    <!-- Çıktı Listesi -->
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 h-6 w-6 text-blue-600">
+                            <!-- SVG İkon: Check -->
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                        </div>
+                        <p class="ml-3 text-lg text-gray-700">Her okulda temel YZ okuryazarlığı programı ve öğrenci kulüpleri.</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 h-6 w-6 text-blue-600">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                        </div>
+                        <p class="ml-3 text-lg text-gray-700">İlçe merkezinde/ABÜ’de hafta sonu uygulamalı YZ atölyeleri.</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 h-6 w-6 text-blue-600">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                        </div>
+                        <p class="ml-3 text-lg text-gray-700">"DERYA Öncüleri" proje takımları için mentorluk ve kamp programları.</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 h-6 w-6 text-blue-600">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                        </div>
+                        <p class="ml-3 text-lg text-gray-700">Proje web sitesi (başvuru, kaynak kütüphanesi, proje galerisi).</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 h-6 w-6 text-blue-600">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                        </div>
+                        <p class="ml-3 text-lg text-gray-700">Üretken YZ yarışmaları (sanat, müzik, edebiyat, uygulama).</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 h-6 w-6 text-blue-600">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                        </div>
+                        <p class="ml-3 text-lg text-gray-700">“DERYA Festivali” ve ödül töreni (TÜBİTAK 4007 uyumlu).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeri Bölümü -->
+        <section id="galeri" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <span class="text-blue-600 font-semibold uppercase">Anlar</span>
+                    <h2 class="text-4xl font-extrabold mt-2">Projeden Görüntüler</h2>
+                    <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+                        Proje toplantılarımızdan ve atölyelerimizden yansımalar.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <img src="https://placehold.co/600x400/e2e8f0/94a3b8?text=Proje+Tanıtım+Toplantısı" alt="Proje Tanıtım Toplantısı" class="rounded-lg shadow-lg object-cover w-full h-64">
+                    <img src="https://placehold.co/600x400/e2e8f0/94a3b8?text=ABÜ+Atölye+Çalışması" alt="Antalya Bilim Üniversitesi Atölye" class="rounded-lg shadow-lg object-cover w-full h-64">
+                    <img src="https://placehold.co/600x400/e2e8f0/94a3b8?text=Öğretmen+Eğitimi" alt="Öğretmen Hizmet İçi Eğitim" class="rounded-lg shadow-lg object-cover w-full h-64">
+                </div>
+            </div>
+        </section>
+
+        <!-- İletişim Bölümü -->
+        <section id="iletisim" class="py-20 bg-blue-700 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-extrabold mb-4">Bizimle İletişime Geçin</h2>
+                <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                    DERYA projesi hakkında daha fazla bilgi almak, işbirliği yapmak veya sürece dahil olmak için bizimle irtibata geçebilirsiniz.
+                </p>
+                <div class="bg-white text-gray-900 rounded-lg p-8 max-w-xl mx-auto shadow-lg">
+                    <h3 class="text-2xl font-bold mb-3">Proje Yürütücüsü</h3>
+                    <p class="text-lg text-gray-700">
+                        Döşemealtı İlçe Milli Eğitim Müdürlüğü
+                    </p>
+                    <p class="text-gray-600 mt-2">(Proje Ofisi İletişim Bilgileri)</p>
+                    <a href="mailto:bilgi@derya.gov.tr" class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition duration-300">
+                        E-posta Gönder
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="text-center">
+                <p>&copy; 2025 DERYA - Döşemealtı Eğitimde Robotik ve Yapay Zekâ Akademisi.</p>
+                <p>Bu proje Döşemealtı Kaymakamlığı tarafından yürütülmektedir.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobil Menü için JavaScript -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            // İkonu değiştir (Hamburger <-> Kapat)
+            const icon = mobileMenuButton.querySelector('svg');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />`;
+            } else {
+                icon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />`;
+            }
+        });
+
+        // Mobil menüdeki bir linke tıklanınca menüyü kapat
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                // İkonu tekrar hamburger yap
+                mobileMenuButton.querySelector('svg').innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />`;
+            });
+        });
+    </script>
+
+</body>
+</html>
