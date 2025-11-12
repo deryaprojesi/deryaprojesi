@@ -1,4 +1,4 @@
-<p align="center"> <img src="https" alt="DERYA Proje Logosu" width="200"/> </p>
+<p align="center"> <img src="[https](https://github.com/deryaprojesi/deryaprojesi/blob/main/src/deryalogo.png)" alt="DERYA Proje Logosu" width="200"/> </p>
 
 <h1 align="center">DERYA: Döşemealtı Eğitimde Robotik ve Yapay Zekâ Akademisi</h1>
 
