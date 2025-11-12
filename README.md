@@ -1,5 +1,6 @@
-<p align="center"> <img src="[https](https://github.com/deryaprojesi/deryaprojesi/blob/main/src/deryalogo.png)" alt="DERYA Proje Logosu" width="200"/> </p>
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/deryaprojesi/deryaprojesi/main/src/deryalogo.png" alt="DERYA Proje Logosu" width="200"/>
+</p>
 <h1 align="center">DERYA: Döşemealtı Eğitimde Robotik ve Yapay Zekâ Akademisi</h1>
 
 <p align="center"> <strong>Eğitimin geleceğini "Altın Üçgen" (Akademi-Sanayi-Eğitim) modeliyle Döşemealtı'nda inşa ediyoruz.</strong> <br /> <br /> <img src="https://img.shields.io/badge/proje-Aktif-brightgreen" alt="Proje Durumu"> <img src="https://img.shields.io/badge/lisans-MIT-blue" alt="Lisans"> <a href="[PROJENİZİN WEB SİTESİ LİNKİ]"> <img src="https://img.shields.io/badge/web-deryaprojesi.org-purple" alt="Web Sitesi"> </a> <a href="[PROJENİZİN X (TWITTER) LİNKİ]"> <img src="https://www.google.com/search?q=https://img.shields.io/badge/X-%40deryaprojesi-black" alt="X (Twitter)"> </a> <a href="[PROJENİZİN LINKEDIN LİNKİ]"> <img src="https://www.google.com/search?q=https://img.shields.io/badge/LinkedIn-%40deryaprojesi-blue" alt="LinkedIn"> </a> </p>
