@@ -10,16 +10,16 @@
   <br />
   <img src="https://img.shields.io/badge/proje-Aktif-brightgreen" alt="Proje Durumu">
   <img src="https://img.shields.io/badge/lisans-MIT-blue" alt="Lisans">
-  <a href="https://www.deryaprojesi.com">
+  <a href="https://www.deryaprojesi.com" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/web-deryaprojesi.com-purple" alt="Web Sitesi">
   </a>
-  <a href="https://x.com/deryaprojesi">
+  <a href="https://x.com/deryaprojesi" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/X-@deryaprojesi-black" alt="X (Twitter)">
   </a>
-  <a href="https://www.linkedin.com/company/deryaprojesi">
+  <a href="https://www.linkedin.com/company/deryaprojesi" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/LinkedIn-@deryaprojesi-blue" alt="LinkedIn">
   </a>
-   <a href="https://www.instagram.com/deryaprojesi">
+   <a href="https://www.instagram.com/deryaprojesi" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Instagram-@deryaprojesi-E4405F" alt="Instagram">
   </a>
 </p>
@@ -68,18 +68,18 @@ Bu depoda aşağıdaki gibi proje kaynaklarını bulabilirsiniz:
 
 ## 🤝 Katkıda Bulunma (Contributing)
 
-DERYA Projesi, eğitimin geleceğine katkı sağlamak isteyen herkesin desteğine açıktır. Eğer siz de bu heyecana ortak olmak, müfredat geliştirmek, mentorluk yapmak veya bir hatayı düzeltmek isterseniz, lütfen `CONTRIBUTING.md` dosyasını inceleyin. (Bu dosyayı oluşturmanız gerekecektir.)
+DERYA Projesi, eğitimin geleceğine katkı sağlamak isteyen herkesin desteğine açıktır. Eğer siz de bu heyecana ortak olmak, müfredat geliştirmek, mentorluk yapmak veya bir hatayı düzeltmek isterseniz, lütfen <a href="CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">CONTRIBUTING.md</a> dosyasını inceleyin. (Bu dosyayı oluşturmanız gerekecektir.)
 
 ## 📜 Lisans
 
-Bu projede yer alan dokümanlar ve kodlar, [MIT Lisansı](LICENSE) altında lisanslanmıştır. Detaylar için `LICENSE` dosyasına bakınız.
+Bu projede yer alan dokümanlar ve kodlar, <a href="LICENSE" target="_blank" rel="noopener noreferrer">MIT Lisansı</a> altında lisanslanmıştır. Detaylar için <a href="LICENSE" target="_blank" rel="noopener noreferrer">LICENSE</a> dosyasına bakınız.
 
 ## 📬 İletişim ve Sosyal Medya
 
 Projemiz hakkındaki en güncel bilgilere ulaşmak, soru sormak veya işbirliği teklifinde bulunmak için bizimle iletişime geçin:
 
-* **🌐 Resmi Web Sitesi:** [www.deryaprojesi.com](https://www.deryaprojesi.com)
-* **📧 Resmi E-posta:** [deryaprojesi@gmail.com](mailto:deryaprojesi@gmail.com)
-* **X (Twitter):** [@deryaprojesi](https://x.com/deryaprojesi)
-* **LinkedIn:** [@deryaprojesi](https://www.linkedin.com/company/deryaprojesi)
-* **Instagram:** [@deryaprojesi](https://www.instagram.com/deryaprojesi)
+* **🌐 Resmi Web Sitesi:** <a href="https://www.deryaprojesi.com" target="_blank" rel="noopener noreferrer">www.deryaprojesi.com</a>
+* **📧 Resmi E-posta:** <a href="mailto:deryaprojesi@gmail.com">deryaprojesi@gmail.com</a>
+* **X (Twitter):** <a href="https://x.com/deryaprojesi" target="_blank" rel="noopener noreferrer">@deryaprojesi</a>
+* **LinkedIn:** <a href="https://www.linkedin.com/company/deryaprojesi" target="_blank" rel="noopener noreferrer">@deryaprojesi</a>
+* **Instagram:** <a href="https://www.instagram.com/deryaprojesi" target="_blank" rel="noopener noreferrer">@deryaprojesi</a>
