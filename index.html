@@ -19,6 +19,12 @@
         .hero-section {
             min-height: 75vh;
         }
+        /* Yeni tema renkleri için özel sınıflar tanımlayalım */
+        .theme-blue { color: #00BFFF; } /* Canlı Mavi (Deep Sky Blue) */
+        .theme-blue-bg { background-color: #00BFFF; }
+        .theme-blue-hover:hover { background-color: #009ACD; }
+        .theme-dark { color: #0F172A; } /* Koyu Lacivert (Slate 900) */
+        .theme-dark-bg { background-color: #0F172A; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
@@ -33,19 +39,19 @@
                 </div>
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex md:items-center md:space-x-8">
-                    <a href="#hakkinda" class="text-gray-600 hover:text-blue-700 font-medium">Proje Hakkında</a>
-                    <a href="#amaclar" class="text-gray-600 hover:text-blue-700 font-medium">Amaç ve Hedefler</a>
-                    <a href="#paydaslar" class="text-gray-600 hover:text-blue-700 font-medium">Paydaşlar</a>
-                    <a href="#yaklasim" class="text-gray-600 hover:text-blue-700 font-medium">Yaklaşım</a>
-                    <a href="#ciktilar" class="text-gray-600 hover:text-blue-700 font-medium">Proje Çıktıları</a>
-                    <a href="#sayilarla" class="text-gray-600 hover:text-blue-700 font-medium">Sayılarla DERYA</a> <!-- YENİ EKLENDİ -->
-                    <a href="#iletisim" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700">
+                    <a href="#hakkinda" class="text-gray-600 hover:text-cyan-600 font-medium">Proje Hakkında</a>
+                    <a href="#amaclar" class="text-gray-600 hover:text-cyan-600 font-medium">Amaç ve Hedefler</a>
+                    <a href="#paydaslar" class="text-gray-600 hover:text-cyan-600 font-medium">Paydaşlar</a>
+                    <a href="#yaklasim" class="text-gray-600 hover:text-cyan-600 font-medium">Yaklaşım</a>
+                    <a href="#ciktilar" class="text-gray-600 hover:text-cyan-600 font-medium">Proje Çıktıları</a>
+                    <a href="#sayilarla" class="text-gray-600 hover:text-cyan-600 font-medium">Sayılarla DERYA</a> <!-- YENİ EKLENDİ -->
+                    <a href="#iletisim" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-cyan-600 hover:bg-cyan-700">
                         İletişim
                     </a>
                 </div>
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500">
                         <span class="sr-only">Menüyü aç</span>
                         <!-- Hamburger Icon -->
                         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -59,51 +65,51 @@
         <!-- Mobile Menu (Gizli) -->
         <div class="md:hidden hidden" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#hakkinda" class="text-gray-600 hover:bg-gray-100 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium">Proje Hakkında</a>
-                <a href="#amaclar" class="text-gray-600 hover:bg-gray-100 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium">Amaç ve Hedefler</a>
-                <a href="#paydaslar" class="text-gray-600 hover:bg-gray-100 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium">Paydaşlar</a>
-                <a href="#yaklasim" class="text-gray-600 hover:bg-gray-100 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium">Yaklaşım</a>
-                <a href="#ciktilar" class="text-gray-600 hover:bg-gray-100 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium">Proje Çıktıları</a>
-                <a href="#sayilarla" class="text-gray-600 hover:bg-gray-100 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium">Sayılarla DERYA</a> <!-- YENİ EKLENDİ -->
-                <a href="#iletisim" class="bg-blue-600 text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium">İletişim</a>
+                <a href="#hakkinda" class="text-gray-600 hover:bg-gray-100 hover:text-cyan-700 block px-3 py-2 rounded-md text-base font-medium">Proje Hakkında</a>
+                <a href="#amaclar" class="text-gray-600 hover:bg-gray-100 hover:text-cyan-700 block px-3 py-2 rounded-md text-base font-medium">Amaç ve Hedefler</a>
+                <a href="#paydaslar" class="text-gray-600 hover:bg-gray-100 hover:text-cyan-700 block px-3 py-2 rounded-md text-base font-medium">Paydaşlar</a>
+                <a href="#yaklasim" class="text-gray-600 hover:bg-gray-100 hover:text-cyan-700 block px-3 py-2 rounded-md text-base font-medium">Yaklaşım</a>
+                <a href="#ciktilar" class="text-gray-600 hover:bg-gray-100 hover:text-cyan-700 block px-3 py-2 rounded-md text-base font-medium">Proje Çıktıları</a>
+                <a href="#sayilarla" class="text-gray-600 hover:bg-gray-100 hover:text-cyan-700 block px-3 py-2 rounded-md text-base font-medium">Sayılarla DERYA</a> <!-- YENİ EKLENDİ -->
+                <a href="#iletisim" class="bg-cyan-600 text-white hover:bg-cyan-700 block px-3 py-2 rounded-md text-base font-medium">İletişim</a>
             </div>
         </div>
     </header>
 
     <main>
-        <!-- Kahraman (Hero) Bölümü -->
-        <section id="home" class="hero-section bg-gradient-to-r from-blue-700 to-indigo-800 text-white flex items-center">
+        <!-- Kahraman (Hero) Bölümü - Yeni Tema Renkleri ile -->
+        <section id="home" class="hero-section bg-gradient-to-r from-blue-900 to-gray-900 text-white flex items-center">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 text-cyan-400">
                     DERYA Projesi
                 </h1>
                 <h2 class="text-2xl md:text-4xl font-light mb-6">
                     Döşemealtı Eğitimde Robotik ve Yapay Zekâ Akademisi
                 </h2>
-                <p class="max-w-3xl mx-auto text-lg md:text-xl text-blue-100 mb-8">
+                <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-300 mb-8">
                     Geleceğin teknolojisini Döşemealtı'nda tasarlıyoruz. Öğrencilerimizin yapay zekâ okuryazarlığını artırıyor, onları teknolojinin tüketicisi değil, üreticisi olmaya hazırlıyoruz.
                 </p>
-                <a href="#hakkinda" class="px-8 py-3 bg-white text-blue-700 font-semibold rounded-lg shadow-md hover:bg-gray-100 transition duration-300 transform hover:scale-105 inline-block text-lg">
+                <a href="#hakkinda" class="px-8 py-3 bg-cyan-500 text-gray-900 font-semibold rounded-lg shadow-md hover:bg-cyan-400 transition duration-300 transform hover:scale-105 inline-block text-lg">
                     Projeyi Keşfet
                 </a>
             </div>
         </section>
 
         <!-- Proje Hakkında (Özet ve Gerekçe) -->
-        <section id="hakkinda" class="py-20 bg-gray-50"> <!-- Arka plan değişti -->
+        <section id="hakkinda" class="py-20 bg-gray-900 text-white"> <!-- Arka plan koyu tema için değişti -->
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid md:grid-cols-2 gap-12 items-start">
-                    <div class="bg-white p-8 rounded-lg shadow-xl"> <!-- Kart efekti eklendi -->
-                        <span class="text-white bg-blue-600 px-3 py-1 rounded-md font-semibold uppercase">Motivasyon</span>
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-2xl"> <!-- Kart efekti ve renk değişti -->
+                        <span class="text-gray-900 bg-cyan-400 px-3 py-1 rounded-md font-semibold uppercase">Motivasyon</span>
                         <h3 class="text-3xl font-bold mt-4 mb-4">Neden DERYA?</h3>
-                        <p class="text-lg text-gray-600 leading-relaxed">
+                        <p class="text-lg text-gray-300 leading-relaxed">
                             Yapay zekâ (YZ) teknolojileri, üretimden turizme kadar tüm sektörleri hızla dönüştürmektedir. Bu doğrultuda, öğrencilerin erken yaşta YZ okuryazarlığı kazanarak teknolojinin tüketicisi olmaktan çıkıp üreticisi konumuna geçmelerini sağlamak hedeflenmektedir. Proje, ulusal teknoloji vizyonuyla uyumlu, yerel düzeyde uygulanabilir bir model oluşturma ihtiyacından doğmuştur.
                         </p>
                     </div>
-                    <div class="bg-white p-8 rounded-lg shadow-xl"> <!-- Kart efekti eklendi -->
-                        <span class="text-white bg-indigo-600 px-3 py-1 rounded-md font-semibold uppercase">Proje Özeti</span>
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-2xl"> <!-- Kart efekti ve renk değişti -->
+                        <span class="text-gray-900 bg-indigo-400 px-3 py-1 rounded-md font-semibold uppercase">Proje Özeti</span>
                         <h3 class="text-3xl font-bold mt-4 mb-4">Biz Kimiz?</h3>
-                        <p class="text-lg text-gray-600 leading-relaxed">
+                        <p class="text-lg text-gray-300 leading-relaxed">
                             DERYA, Döşemealtı Kaymakamlığı öncülüğünde, BTK Akademi, Antalya Bilim Üniversitesi ve BAKA (Batı Akdeniz Kalkınma Ajansı) işbirliğiyle hayata geçirilmiştir. Amacımız, yerel ekosistemin gücünü kullanarak sürdürülebilir bir yapı kurmaktır.
                         </p>
                     </div>
@@ -112,7 +118,7 @@
         </section>
 
         <!-- Amaç ve Hedefler -->
-        <section id="amaclar" class="py-20 bg-white"> <!-- Arka plan değişti -->
+        <section id="amaclar" class="py-20 bg-gray-50"> <!-- Arka plan değişti -->
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-4xl font-extrabold mt-2">Amaç ve Hedefler</h2>
@@ -122,8 +128,8 @@
                 </div>
                 <div class="grid md:grid-cols-3 gap-8">
                     <!-- Hedef 1 -->
-                    <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:shadow-xl hover:scale-105">
-                        <div class="bg-blue-100 text-blue-700 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4">
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:shadow-xl hover:scale-105 border-t-4 border-cyan-500">
+                        <div class="bg-cyan-100 text-cyan-700 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4">
                             <!-- SVG İkon: Kitap (Okuryazarlık) -->
                             <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13.5M12 6.253V3.75a1.875 1.875 0 10-3.75 0V6.253M12 6.253H9.375A1.875 1.875 0 007.5 8.128V20.25M12 6.253h2.625A1.875 1.875 0 0116.5 8.128V20.25M16.5 20.25h-9" /></svg>
                         </div>
@@ -133,8 +139,8 @@
                         </p>
                     </div>
                     <!-- Hedef 2 -->
-                    <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:shadow-xl hover:scale-105">
-                        <div class="bg-green-100 text-green-700 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4"> <!-- Renk değişti -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:shadow-xl hover:scale-105 border-t-4 border-lime-500">
+                        <div class="bg-lime-100 text-lime-700 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4"> <!-- Renk değişti (Neon Yeşil) -->
                             <!-- SVG İkon: Kalkan (Etik Kullanım) -->
                             <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.248-8.25-3.286zm0 1.332L12 2.25l-2.25 1.95h.001z" /></svg>
                         </div>
@@ -144,8 +150,8 @@
                         </p>
                     </div>
                     <!-- Hedef 3 -->
-                    <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:shadow-xl hover:scale-105">
-                        <div class="bg-purple-100 text-purple-700 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4"> <!-- Renk değişti -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:shadow-xl hover:scale-105 border-t-4 border-fuchsia-500">
+                        <div class="bg-fuchsia-100 text-fuchsia-700 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4"> <!-- Renk değişti (Neon Mor) -->
                             <!-- SVG İkon: Lamba (Proje) -->
                             <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-1.125m-1.5 1.125a6.01 6.01 0 01-1.5-1.125m1.5 1.125v-2.25A2.25 2.25 0 0113.5 9.75V9h-3v.75a2.25 2.25 0 011.5 2.25v2.25m-6-11.25a.75.75 0 01.75-.75h1.5a.75.75 0 01.75.75v.006a.75.75 0 01-.75.75h-1.5a.75.75 0 01-.75-.75V3.376zm3 11.25a.75.75 0 01.75-.75h1.5a.75.75 0 01.75.75v.006a.75.75 0 01-.75.75h-1.5a.75.75 0 01-.75-.75V14.626zm3 0a.75.75 0 01.75-.75h1.5a.75.75 0 01.75.75v.006a.75.75 0 01-.75.75h-1.5a.75.75 0 01-.75-.75V14.626zm3 0a.75.75 0 01.75-.75h1.5a.75.75 0 01.75.75v.006a.75.75 0 01-.75.75h-1.5a.75.75 0 01-.75-.75V14.626z" /></svg>
                         </div>
@@ -159,31 +165,32 @@
         </section>
 
         <!-- Paydaşlar Bölümü -->
-        <section id="paydaslar" class="py-20 bg-gray-50"> <!-- Arka plan değişti -->
+        <section id="paydaslar" class="py-20 bg-gray-900 text-white"> <!-- Arka plan koyu tema için değişti -->
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-4xl font-extrabold mt-2">Proje Paydaşları</h2>
                 </div>
                 <!-- Logoları 4'lü düzene geçirdim -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
-                    <div class="text-center opacity-80 grayscale transition duration-300 hover:grayscale-0 hover:opacity-100 transform hover:scale-110">
-                        <img src="https://raw.githubusercontent.com/deryaprojesi/deryaprojesi/main/src/kaymakamlik_logo.png" alt="Döşemealtı Kaymakamlığı" class="h-24 mx-auto mb-2"
-                        onerror="this.onerror=null; this.src='https://placehold.co/150x100/e2e8f0/94a3b8?text=Kaymakamlık';">
+                    <div class="text-center opacity-80 transition duration-300 hover:opacity-100 transform hover:scale-110">
+                        <!-- Logoların üzerindeki renk filtrelerini kaldırıp hover'da parlaklık verebiliriz -->
+                        <img src="https://raw.githubusercontent.com/deryaprojesi/deryaprojesi/main/src/kaymakamlik_logo.png" alt="Döşemealtı Kaymakamlığı" class="h-24 mx-auto mb-2 filter brightness-125"
+                        onerror="this.onerror=null; this.src='https://placehold.co/150x100/1e293b/94a3b8?text=Kaymakamlık';">
                         <span class="font-medium">Döşemealtı Kaymakamlığı</span>
                     </div>
-                    <div class="text-center opacity-80 grayscale transition duration-300 hover:grayscale-0 hover:opacity-100 transform hover:scale-110">
-                        <img src="https://raw.githubusercontent.com/deryaprojesi/deryaprojesi/main/src/abu_logo.png" alt="Antalya Bilim Üniversitesi" class="h-24 mx-auto mb-2"
-                        onerror="this.onerror=null; this.src='https://placehold.co/150x100/e2e8f0/94a3b8?text=ABÜ';">
+                    <div class="text-center opacity-80 transition duration-300 hover:opacity-100 transform hover:scale-110">
+                        <img src="https://raw.githubusercontent.com/deryaprojesi/deryaprojesi/main/src/abu_logo.png" alt="Antalya Bilim Üniversitesi" class="h-24 mx-auto mb-2 filter brightness-125"
+                        onerror="this.onerror=null; this.src='https://placehold.co/150x100/1e293b/94a3b8?text=ABÜ';">
                         <span class="font-medium">Antalya Bilim Üniversitesi</span>
                     </div>
-                    <div class="text-center opacity-80 grayscale transition duration-300 hover:grayscale-0 hover:opacity-100 transform hover:scale-110">
-                        <img src="https://raw.githubusercontent.com/deryaprojesi/deryaprojesi/main/src/BTK_logo.png" alt="BTK Akademi" class="h-24 mx-auto mb-2"
-                        onerror="this.onerror=null; this.src='https://placehold.co/150x100/e2e8f0/94a3b8?text=BTK+Akademi';">
+                    <div class="text-center opacity-80 transition duration-300 hover:opacity-100 transform hover:scale-110">
+                        <img src="https://raw.githubusercontent.com/deryaprojesi/deryaprojesi/main/src/BTK_logo.png" alt="BTK Akademi" class="h-24 mx-auto mb-2 filter brightness-125"
+                        onerror="this.onerror=null; this.src='https://placehold.co/150x100/1e293b/94a3b8?text=BTK+Akademi';">
                         <span class="font-medium">BTK Akademi</span>
                     </div>
-                    <div class="text-center opacity-80 grayscale transition duration-300 hover:grayscale-0 hover:opacity-100 transform hover:scale-110">
-                        <img src="https://raw.githubusercontent.com/deryaprojesi/deryaprojesi/main/src/BAKA.jpg" alt="Batı Akdeniz Kalkınma Ajansı" class="h-24 mx-auto mb-2"
-                        onerror="this.onerror=null; this.src='https://placehold.co/150x100/e2e8f0/94a3b8?text=BAKA';">
+                    <div class="text-center opacity-80 transition duration-300 hover:opacity-100 transform hover:scale-110">
+                        <img src="https://raw.githubusercontent.com/deryaprojesi/deryaprojesi/main/src/BAKA.jpg" alt="Batı Akdeniz Kalkınma Ajansı" class="h-24 mx-auto mb-2 filter brightness-125"
+                        onerror="this.onerror=null; this.src='https://placehold.co/150x100/1e293b/94a3b8?text=BAKA';">
                         <span class="font-medium">BAKA</span>
                     </div>
                 </div>
@@ -191,10 +198,10 @@
         </section>
 
         <!-- Yaklaşım (Kademeli Eğitim) -->
-        <section id="yaklasim" class="py-20 bg-white"> <!-- Arka plan değişti -->
+        <section id="yaklasim" class="py-20 bg-gray-50"> <!-- Arka plan değişmedi -->
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
-                    <span class="text-blue-600 font-semibold uppercase">Yol Haritası</span>
+                    <span class="text-cyan-600 font-semibold uppercase">Yol Haritası</span>
                     <h2 class="text-4xl font-extrabold mt-2">Kademeli Eğitim Mimarisi</h2>
                     <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
                         Projemiz, üç temel aşamadan oluşan bir eğitim modeli üzerine kuruludur.
@@ -203,13 +210,13 @@
                 <!-- Kademeler -->
                 <div class="relative">
                     <!-- Bağlantı çizgisi -->
-                    <div class="hidden md:block absolute left-1/2 top-12 bottom-12 w-0.5 bg-blue-300" style="transform: translateX(-50%);"></div>
+                    <div class="hidden md:block absolute left-1/2 top-12 bottom-12 w-0.5 bg-cyan-300" style="transform: translateX(-50%);"></div>
 
                     <div class="grid md:grid-cols-3 gap-8 relative">
                         <!-- Aşama 1 -->
-                        <div class="bg-white p-8 rounded-lg shadow-lg text-center md:text-left z-10 border-t-4 border-blue-500 hover:shadow-xl transition duration-300">
+                        <div class="bg-white p-8 rounded-lg shadow-lg text-center md:text-left z-10 border-t-4 border-cyan-500 hover:shadow-xl transition duration-300">
                             <div class="flex justify-center md:justify-start mb-4">
-                                <span class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-600 text-white font-bold text-xl">1</span>
+                                <span class="flex items-center justify-center h-12 w-12 rounded-full bg-cyan-600 text-white font-bold text-xl">1</span>
                             </div>
                             <h3 class="text-2xl font-bold mb-3">Okuryazarlık</h3>
                             <p class="text-gray-600">
@@ -217,9 +224,9 @@
                             </p>
                         </div>
                         <!-- Aşama 2 -->
-                        <div class="bg-white p-8 rounded-lg shadow-lg text-center z-10 border-t-4 border-green-500 hover:shadow-xl transition duration-300">
+                        <div class="bg-white p-8 rounded-lg shadow-lg text-center z-10 border-t-4 border-lime-500 hover:shadow-xl transition duration-300">
                             <div class="flex justify-center mb-4">
-                                <span class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-600 text-white font-bold text-xl">2</span>
+                                <span class="flex items-center justify-center h-12 w-12 rounded-full bg-cyan-600 text-white font-bold text-xl">2</span>
                             </div>
                             <h3 class="text-2xl font-bold mb-3">Uygulama</h3>
                             <p class="text-gray-600">
@@ -227,9 +234,9 @@
                             </p>
                         </div>
                         <!-- Aşama 3 -->
-                        <div class="bg-white p-8 rounded-lg shadow-lg text-center md:text-right z-10 border-t-4 border-purple-500 hover:shadow-xl transition duration-300">
+                        <div class="bg-white p-8 rounded-lg shadow-lg text-center md:text-right z-10 border-t-4 border-fuchsia-500 hover:shadow-xl transition duration-300">
                             <div class="flex justify-center md:justify-end mb-4">
-                                <span class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-600 text-white font-bold text-xl">3</span>
+                                <span class="flex items-center justify-center h-12 w-12 rounded-full bg-cyan-600 text-white font-bold text-xl">3</span>
                             </div>
                             <h3 class="text-2xl font-bold mb-3">Proje / Ustalık</h3>
                             <p class="text-gray-600">
@@ -242,46 +249,46 @@
         </section>
 
         <!-- Proje Çıktıları -->
-        <section id="ciktilar" class="py-20 bg-gray-50"> <!-- Arka plan değişti -->
+        <section id="ciktilar" class="py-20 bg-gray-900 text-white"> <!-- Arka plan koyu tema için değişti -->
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
-                    <span class="text-blue-600 font-semibold uppercase">Sonuçlar</span>
+                    <span class="text-cyan-400 font-semibold uppercase">Sonuçlar</span>
                     <h2 class="text-4xl font-extrabold mt-2">Proje Çıktıları</h2>
-                    <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+                    <p class="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
                         DERYA projesi ile somut ve sürdürülebilir değerler yaratıyoruz.
                     </p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-6">
                     <!-- Çıktı 1 -->
-                    <div class="flex items-start bg-white p-4 rounded-lg shadow-md hover:bg-gray-100 transition duration-300 transform hover:scale-105">
-                        <div class="flex-shrink-0 h-8 w-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">
+                    <div class="flex items-start bg-gray-800 p-4 rounded-lg shadow-md hover:bg-gray-700 transition duration-300 transform hover:scale-105">
+                        <div class="flex-shrink-0 h-8 w-8 rounded-full bg-cyan-600 text-white flex items-center justify-center">
                             <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
                         </div>
-                        <p class="ml-4 text-lg text-gray-700">Okullarda Yapay Zeka derslerinin seçilmesi, HEM ve BTK Akademi ile öğrenciler kurslar.</p>
+                        <p class="ml-4 text-lg text-gray-300">Okullarda Yapay Zeka derslerinin seçilmesi, HEM ve BTK Akademi ile öğrenciler kurslar.</p>
                     </div>
                     <!-- Çıktı 2 -->
-                    <div class="flex items-start bg-white p-4 rounded-lg shadow-md hover:bg-gray-100 transition duration-300 transform hover:scale-105">
-                        <div class="flex-shrink-0 h-8 w-8 rounded-full bg-green-100 text-green-600 flex items-center justify-center">
+                    <div class="flex items-start bg-gray-800 p-4 rounded-lg shadow-md hover:bg-gray-700 transition duration-300 transform hover:scale-105">
+                        <div class="flex-shrink-0 h-8 w-8 rounded-full bg-lime-600 text-white flex items-center justify-center">
                             <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
                         </div>
-                        <p class="ml-4 text-lg text-gray-700">ABÜ'de öğrencilere yönelik eğitimler, seminerler düzenlenmesi.</p>
+                        <p class="ml-4 text-lg text-gray-300">ABÜ'de öğrencilere yönelik eğitimler, seminerler düzenlenmesi.</p>
                     </div>
                     <!-- Çıktı 3 -->
-                    <div class="flex items-start bg-white p-4 rounded-lg shadow-md hover:bg-gray-100 transition duration-300 transform hover:scale-105">
-                        <div class="flex-shrink-0 h-8 w-8 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center">
+                    <div class="flex items-start bg-gray-800 p-4 rounded-lg shadow-md hover:bg-gray-700 transition duration-300 transform hover:scale-105">
+                        <div class="flex-shrink-0 h-8 w-8 rounded-full bg-fuchsia-600 text-white flex items-center justify-center">
                             <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
                         </div>
-                        <p class="ml-4 text-lg text-gray-700">“DERYA Festivali” ve ödül töreni.</p>
+                        <p class="ml-4 text-lg text-gray-300">“DERYA Festivali” ve ödül töreni.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- YENİ BÖLÜM: Sayılarla DERYA -->
-        <section id="sayilarla" class="py-20 bg-white">
+        <!-- YENİ BÖLÜM: Sayılarla DERYA - Renkler Güncellendi -->
+        <section id="sayilarla" class="py-20 bg-gray-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
-                    <span class="text-blue-600 font-semibold uppercase">Verilerle Projemiz</span>
+                    <span class="text-cyan-600 font-semibold uppercase">Verilerle Projemiz</span>
                     <h2 class="text-4xl font-extrabold mt-2">Sayılarla DERYA</h2>
                     <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
                         Projemizin bugüne kadarki etkisini ve gelecek hedeflerini somut verilerle görün.
@@ -291,8 +298,8 @@
                 <!-- Stat Kartları -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     
-                    <!-- Stat Kart 1: Altyapı -->
-                    <div class="bg-gradient-to-br from-blue-500 to-indigo-600 text-white p-6 rounded-lg shadow-xl transform transition duration-300 hover:scale-105">
+                    <!-- Stat Kart 1: Altyapı - Canlı Mavi-Koyu Mavi -->
+                    <div class="bg-gradient-to-br from-cyan-600 to-blue-800 text-white p-6 rounded-lg shadow-xl transform transition duration-300 hover:scale-105">
                         <div class="flex items-center mb-3">
                             <!-- İkon: Bina/Okul -->
                             <svg class="w-8 h-8 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M5 6h14M5 9h14m-9 3h4m-4 3h4m-4 3h4" /></svg>
@@ -305,8 +312,8 @@
                         </ul>
                     </div>
 
-                    <!-- Stat Kart 2: Öğrenci Eğitimi -->
-                    <div class="bg-gradient-to-br from-green-500 to-teal-600 text-white p-6 rounded-lg shadow-xl transform transition duration-300 hover:scale-105">
+                    <!-- Stat Kart 2: Öğrenci Eğitimi - Neon Yeşil-Turkuaz -->
+                    <div class="bg-gradient-to-br from-lime-500 to-teal-600 text-white p-6 rounded-lg shadow-xl transform transition duration-300 hover:scale-105">
                         <div class="flex items-center mb-3">
                             <!-- İkon: Öğrenciler -->
                             <svg class="w-8 h-8 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 14l9-5-9-5-9 5 9 5z" /><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0v6m0-6L5.121 10.622A12.083 12.083 0 013 17.101V19a2 2 0 002 2h14a2 2 0 002-2v-1.899a12.083 12.083 0 01-2.121-6.479L12 14z" /></svg>
@@ -314,11 +321,11 @@
                         </div>
                         <p class="text-4xl font-extrabold mb-2">2200</p>
                         <p class="text-lg font-medium mb-2">Toplam Eğitim Alan Öğrenci</p>
-                        <p class="text-sm text-green-100">700 (HEM) + 500 (Seçmeli) + 1000 (BTK Plan.)</p>
+                        <p class="text-sm text-gray-900">(700 HEM) + (500 Seçmeli) + (1000 BTK Plan.)</p>
                     </div>
                     
-                    <!-- Stat Kart 3: Yılsonu Hedefi -->
-                    <div class="bg-gradient-to-br from-purple-500 to-pink-600 text-white p-6 rounded-lg shadow-xl transform transition duration-300 hover:scale-105">
+                    <!-- Stat Kart 3: Yılsonu Hedefi - Neon Mor-Pembe -->
+                    <div class="bg-gradient-to-br from-fuchsia-600 to-pink-700 text-white p-6 rounded-lg shadow-xl transform transition duration-300 hover:scale-105">
                         <div class="flex items-center mb-3">
                             <!-- İkon: Hedef -->
                             <svg class="w-8 h-8 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
@@ -326,10 +333,10 @@
                         </div>
                         <p class="text-4xl font-extrabold mb-2">~6500</p>
                         <p class="text-lg font-medium mb-2">Toplam Yılsonu Hedefi</p>
-                         <p class="text-sm text-purple-100">(Mevcut: 2200 + Hedef: 5000)</p>
+                         <p class="text-sm text-gray-900">(Mevcut: 2200 + Hedef: 5000)</p>
                     </div>
 
-                    <!-- Stat Kart 4: Öğretmen Eğitimi -->
+                    <!-- Stat Kart 4: Öğretmen Eğitimi - Altın Sarısı-Turuncu -->
                     <div class="bg-gradient-to-br from-yellow-500 to-orange-600 text-white p-6 rounded-lg shadow-xl transform transition duration-300 hover:scale-105">
                         <div class="flex items-center mb-3">
                             <!-- İkon: Öğretmen -->
@@ -338,7 +345,7 @@
                         </div>
                         <p class="text-4xl font-extrabold mb-2">61</p>
                         <p class="text-lg font-medium mb-2">Eğitici Eğitimi Alan</p>
-                        <p class="text-sm text-yellow-100">Planlanan: +500 (BTK & Hizmetiçi)</p>
+                        <p class="text-sm text-gray-900">Planlanan: +500 (BTK & Hizmetiçi)</p>
                     </div>
                 </div>
             </div>
@@ -347,18 +354,18 @@
 
 
         <!-- Galeri Bölümü -->
-        <section id="galeri" class="py-20 bg-gray-50"> <!-- Arka plan değişti -->
+        <section id="galeri" class="py-20 bg-gray-900 text-white"> <!-- Arka plan koyu tema için değişti -->
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
-                    <span class="text-blue-600 font-semibold uppercase">Anlar</span>
+                    <span class="text-cyan-400 font-semibold uppercase">Anlar</span>
                     <h2 class="text-4xl font-extrabold mt-2">Projeden Görüntüler</h2>
                 </div>
 
                 <!-- Padlet Embed Eklendi -->
                 <div> <!-- mt-12 kaldırıldı, grid silindiği için -->
-                    <div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:8px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4">
+                    <div class="padlet-embed" style="border:1px solid rgba(255,255,255,0.1);border-radius:8px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#1F2937">
                         <p style="padding:0;margin:0"><iframe src="https://padlet.com/embed/5hv1xdxhj23micwt" frameborder="0" allow="camera;microphone;geolocation;display-capture;clipboard-write" style="width:100%;height:608px;display:block;padding:0;margin:0; border-radius:8px;"></iframe></p>
-                        <div style="display:flex;align-items:center;justify:content:end;margin:0;height:28px"><a href="https://padlet.com?ref=embed" style="display:block;flex-grow:0;margin:0;border:none;padding:0;text-decoration:none" target="_blank"><div style="display:flex;align-items:center;"><img src="https://padlet.net/embeds/made_with_padlet_2022.png" width="114" height="28" style="padding:0;margin:0;background:0 0;border:none;box-shadow:none" alt="Padlet ile yapıldı"></div></a></div>
+                        <div style="display:flex;align-items:center;justify-content:end;margin:0;height:28px"><a href="https://padlet.com?ref=embed" style="display:block;flex-grow:0;margin:0;border:none;padding:0;text-decoration:none" target="_blank"><div style="display:flex;align-items:center;"><img src="https://padlet.net/embeds/made_with_padlet_2022.png" width="114" height="28" style="padding:0;margin:0;background:0 0;border:none;box-shadow:none" alt="Padlet ile yapıldı"></div></a></div>
                     </div>
                 </div>
                 <!-- Padlet Embed Sonu -->
@@ -366,20 +373,20 @@
             </div>
         </section>
 
-        <!-- İletişim Bölümü -->
-        <section id="iletisim" class="py-20 bg-blue-700 text-white">
+        <!-- İletişim Bölümü - Koyu Tema -->
+        <section id="iletisim" class="py-20 bg-gray-800 text-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-4xl font-extrabold mb-4">Bizimle İletişime Geçin</h2>
-                <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                <h2 class="text-4xl font-extrabold mb-4 text-cyan-400">Bizimle İletişime Geçin</h2>
+                <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
                     DERYA projesi hakkında daha fazla bilgi almak, işbirliği yapmak veya sürece dahil olmak için bizimle irtibata geçebilirsiniz.
                 </p>
-                <div class="bg-white text-gray-900 rounded-lg p-8 max-w-xl mx-auto shadow-xl"> <!-- Gölge artırıldı -->
+                <div class="bg-gray-700 text-white rounded-lg p-8 max-w-xl mx-auto shadow-xl"> <!-- Renkler koyu temaya uyumlu hale getirildi -->
                     <h3 class="text-2xl font-bold mb-3">Proje Yürütücüsü</h3>
-                    <p class="text-lg text-gray-700">
+                    <p class="text-lg text-gray-200">
                         Döşemealtı İlçe Milli Eğitim Müdürlüğü
                     </p>
-                    <p class="text-gray-600 mt-2">(Proje Ofisi İletişim Bilgileri)</p>
-                    <a href="mailto:deryaprojesi@gmail.com" class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-800 transition duration-300 transform hover:scale-105">
+                    <p class="text-gray-400 mt-2">(Proje Ofisi İletişim Bilgileri)</p>
+                    <a href="mailto:deryaprojesi@gmail.com" class="mt-6 inline-block px-6 py-3 bg-cyan-500 text-gray-900 font-medium rounded-lg hover:bg-cyan-400 transition duration-300 transform hover:scale-105">
                         E-posta Gönder
                     </a>
                 </div>
@@ -388,7 +395,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-400">
+    <footer class="bg-gray-900 text-gray-400"> <!-- Footer koyu hale getirildi -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div class="text-center">
                 <p>&copy; 2025 DERYA - Döşemealtı Eğitimde Robotik ve Yapay Zekâ Akademisi.</p>
